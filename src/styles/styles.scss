@@ -1,3 +1,67 @@
-body {
-  font-size: 2rem;
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial';
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.scoreboard-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.scoreboard {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 100%;
+  background-color: #ECECEC;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+
+  .inning-labels {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    border-bottom: 1px solid #222;
+    align-items: center;
+    justify-content: space-around;
+
+    label {
+      width: 35px;
+    }
+  }
+
+  .scores {
+    width: 450px;
+  }
+
+  label:nth-child(1) {
+    width: 60px;
+  }
+  .labels {
+    label {
+      width: 60px;
+      display: block;
+    }
+  }
+}
+
+.inning {
+  width: 45px;
+}
+
+.score {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.3);
 }
