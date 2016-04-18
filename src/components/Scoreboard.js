@@ -24,8 +24,8 @@ class Scoreboard extends React.Component {
   }
 }
 
-// Scoreboard.propTypes = {
-//   children: React.PropTypes.func
-// };
+Scoreboard.propTypes = {
+  children: React.PropTypes.array
+};
 
 export default Scoreboard;
