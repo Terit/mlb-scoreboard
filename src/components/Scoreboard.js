@@ -16,7 +16,7 @@ class Scoreboard extends React.Component {
           <label>8</label>
           <label>9</label>
         </div>
-        <div className="scores">
+        <div className="score-container">
           {this.props.children}
         </div>
       </div>

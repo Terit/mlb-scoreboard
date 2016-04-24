@@ -19,8 +19,6 @@ html, body {
 
 .scoreboard {
   padding: 10px 0;
-  display: flex;
-  flex-wrap: wrap;
   height: 300px;
   width: 100%;
   background-color: #ECECEC;
@@ -35,33 +33,41 @@ html, body {
     justify-content: space-around;
 
     label {
-      width: 35px;
+      width: 25px;
+    }
+  }
+
+  label:nth-child(1) {
+    width: 50px;
+  }
+}
+
+.score-container {
+  display: flex;
+
+  .labels {
+    label {
+      padding: 10px 0 10px 5px;
+      display: block;
     }
   }
 
   .scores {
-    width: 450px;
-  }
+    display: flex;
 
-  label:nth-child(1) {
-    width: 60px;
-  }
-  .labels {
-    label {
-      width: 60px;
-      display: block;
+    .inning {
+      width: 35px;
+      margin: 0 1px 2px 0;
+
+      .score {
+        display: flex;
+        padding: 10px 0;
+        justify-content: space-around;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+      }
     }
   }
 }
 
-.inning {
-  width: 45px;
-}
 
-.score {
-  display: flex;
-  padding: 10px 0;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0 3px 4px rgba(0,0,0,0.3);
-}
+

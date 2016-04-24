@@ -5,12 +5,34 @@ import Inning from './Inning.js';
 import Score from './Score.js';
 
 class App extends React.Component {
-  renderInning() {
+  renderInnings() {
     return (
-      <Inning>
-        <Score score="10" />
-        <Score score="3" />
-      </Inning>
+      <div className="scores">
+        <Inning>
+          <Score score="10" />
+          <Score score="3" />
+        </Inning>
+        <Inning>
+          <Score score="0" />
+          <Score score="1" />
+        </Inning>
+        <Inning>
+          <Score score="0" />
+          <Score score="1" />
+        </Inning>
+        <Inning>
+          <Score score="0" />
+          <Score score="1" />
+        </Inning>
+        <Inning>
+          <Score score="0" />
+          <Score score="1" />
+        </Inning>
+        <Inning>
+          <Score score="0" />
+          <Score score="1" />
+        </Inning>
+      </div>
     );
   }
 
@@ -22,7 +44,7 @@ class App extends React.Component {
             <label>Top</label>
             <label>Bot</label>
           </div>
-          {this.renderInning()}
+          {this.renderInnings()}
         </Scoreboard>
       </div>
     );
