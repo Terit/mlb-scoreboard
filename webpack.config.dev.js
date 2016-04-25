@@ -35,6 +35,9 @@ export default {
       },
       {
         test: /(\.css|\.scss)$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
+      },
+      {
+        test: /\.json$/, include: /src/, loader: 'json-loader'
       }
     ]
   }
