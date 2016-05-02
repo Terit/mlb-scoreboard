@@ -1,3 +1,8 @@
+$primary-color: #577399;
+$secondary-color: #bdd5ea;
+$dark-grey: #b5c0c0;
+$light-grey: #d2d5d6;
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +27,7 @@ html, body {
   height: 300px;
   width: 100%;
   max-width: 375px;
-  background-color: #ECECEC;
+  background-color: #ececec;
   box-shadow: 0 3px 4px rgba(0,0,0,0.3);
 
   .inning-labels {
@@ -45,10 +50,11 @@ html, body {
 
 .score-container {
   display: flex;
+  margin-top: 2px;
 
   .labels {
     label {
-      padding: 10px 0 10px 5px;
+      padding: 10px 0 16px 5px;
       display: block;
     }
   }
@@ -63,15 +69,17 @@ html, body {
       .score {
         display: flex;
         padding: 10px 0;
+        margin-bottom: 6px;
         justify-content: space-around;
-        box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+        background: #fafafa;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.15);
       }
     }
   }
 }
 
 .header {
-  background: #005A9C;
+  background: $primary-color;
   width: 100%;
   height: 56px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.4);
@@ -168,7 +176,7 @@ html, body {
 
 .side-nav__header {
   height: 200px;
-  background: #005A9C;
+  background: $secondary-color;
   color: #FFF;
   display: flex;
   padding: 16px;
