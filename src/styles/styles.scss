@@ -1,7 +1,9 @@
 $primary-color: #577399;
 $secondary-color: #bdd5ea;
 $dark-grey: #b5c0c0;
-$light-grey: #d2d5d6;
+$light-grey: #fafafa;
+$white: #ececec;
+$black: #222;
 
 * {
   box-sizing: border-box;
@@ -12,7 +14,7 @@ html, body {
   padding: 0;
   font-family: Arial sans-serif;
   font-size: 1.2rem;
-  color: #222;
+  color: $black;
 }
 
 .scoreboard-container {
@@ -27,14 +29,14 @@ html, body {
   height: 300px;
   width: 100%;
   max-width: 375px;
-  background-color: #ececec;
+  background-color: $white;
   box-shadow: 0 3px 4px rgba(0,0,0,0.3);
 
   .inning-labels {
     display: flex;
     flex-direction: row;
     height: 30px;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid $black;
     align-items: center;
     justify-content: space-around;
 
@@ -71,7 +73,7 @@ html, body {
         padding: 10px 0;
         margin-bottom: 6px;
         justify-content: space-around;
-        background: #fafafa;
+        background: $light-grey;
         box-shadow: 0 3px 4px rgba(0,0,0,0.15);
       }
     }
@@ -83,7 +85,7 @@ html, body {
   width: 100%;
   height: 56px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-  color: #FFF;
+  color: $white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,7 +104,7 @@ html, body {
   height: 24px;
   padding: 0;
   margin: 0;
-  color: #FFF;
+  color: $white;
 }
 
 .side-nav {
@@ -133,7 +135,7 @@ html, body {
   position: relative;
   width: 90%;
   max-width: 400px;
-  background: #FFF;
+  background: $white;
   height: 100%;
   box-shadow: 2px 0 12px rgba(0,0,0,0.4);
   transform: translate(-102%);
@@ -167,7 +169,7 @@ html, body {
   top: 16px;
   background: none;
   border: none;
-  color: #FFF;
+  color: $white;
   width: 24px;
   height: 24px;
   padding: 0;
@@ -177,7 +179,7 @@ html, body {
 .side-nav__header {
   height: 200px;
   background: $secondary-color;
-  color: #FFF;
+  color: $white;
   display: flex;
   padding: 16px;
   align-items: flex-end;
@@ -200,7 +202,7 @@ html, body {
     padding: 0 16px;
 
     &:hover {
-      background: #CCC;
+      background: $dark-grey;
     }
   }
 }
